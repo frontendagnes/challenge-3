@@ -1,0 +1,125 @@
+    html{
+       scroll-behavior: smooth; 
+    }
+    body{
+        width: 1400px;
+        margin:0;
+        padding: 0;
+    }
+    button{
+        
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        width: 200px;
+        height: 60px;
+        background-color: #7CC576;
+        color: white;
+        border-radius: 100px;
+        border: transparent;
+        cursor: pointer;
+    }
+    .nav-head {
+        font-family: 'Montserrat', sans-serif;
+        // font-family: 'Roboto Slab', serif;
+        width: 100%;
+        height: 72px;  
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        .wap-head-nav {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 375px;
+            .green-circle {
+                background-color: #7CC576;
+                border-radius: 50%;
+                width: 28px;
+                height: 28px;
+                margin-right: 10px;
+            }
+
+            .name-company {
+                color: #555555;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+        .menu-cnt{     
+            width: 429px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-right: 100px;
+            span {
+                display: inline-block;
+                font-size: 14px;
+
+                a {
+                    color: #777777;
+                    text-decoration: none;
+                    transition: all .7s ease-in ;
+                    &:hover{
+                        color: #555555;
+                    }
+                }
+            }
+        }
+    }
+main{
+    position: relative;
+    #home{
+        position: absolute;
+        // border: 10px solid red;
+        top:50px;
+        overflow: hidden;
+        width: 1430px;
+        height: 530px;
+        color: #ffffff;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        color: white;
+        img{
+            position: absolute;
+            width:100%;
+            height: 530px;
+        }
+        .img-div{
+            position: absolute;      
+            width: 1430px;
+            height: 530px;
+            background-color: black;
+            opacity: .75;
+            color: #ffffff;
+
+           
+    }
+
+        h1{
+            position: absolute;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            width: 560px;
+            text-align: center;
+            top:118px;
+        }
+        p{
+            position: absolute;
+            margin-top: 40px;
+            font-family: 'Roboto Slab', serif;
+            font-size: 20px;
+            top: 270px;
+        }
+        button{
+            position: absolute;
+            bottom: 119px;
+        }
+}
+}
