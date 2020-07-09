@@ -7,7 +7,6 @@
         padding: 0;
     }
     button{
-        
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         font-weight: bold;
@@ -18,11 +17,16 @@
         border-radius: 100px;
         border: transparent;
         cursor: pointer;
+        transition: all .75s;
+    }
+    button:hover{
+        background-color: #ffffff;
+        color:#000000;
     }
     .nav-head {
         font-family: 'Montserrat', sans-serif;
         // font-family: 'Roboto Slab', serif;
-        width: 100%;
+        width: 1168px;
         height: 72px;  
         display: flex;
         flex-flow: row wrap;
@@ -33,28 +37,15 @@
             flex-flow: row wrap;
             justify-content: flex-end;
             align-items: flex-end;
-            width: 375px;
-            .green-circle {
-                background-color: #7CC576;
-                border-radius: 50%;
-                width: 28px;
-                height: 28px;
-                margin-right: 10px;
-            }
-
-            .name-company {
-                color: #555555;
-                font-size: 18px;
-                font-weight: bold;
-            }
+            width: 373px;
+    
         }
         .menu-cnt{     
-            width: 429px;
+            width: 427px;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            margin-right: 100px;
-            span {
+             span {
                 display: inline-block;
                 font-size: 14px;
 
@@ -62,8 +53,9 @@
                     color: #777777;
                     text-decoration: none;
                     transition: all .7s ease-in ;
+                    font-weight: bold;
                     &:hover{
-                        color: #555555;
+                        color: #000000;
                     }
                 }
             }
@@ -96,26 +88,24 @@ main{
             height: 530px;
             background-color: black;
             opacity: .75;
-            color: #ffffff;
-
-           
+            color: #ffffff;   
     }
 
         h1{
             position: absolute;
             font-family: 'Montserrat', sans-serif;
-            font-size: 50px;
-            font-weight: bold;
+            font-size: 60px;
+            font-weight: 900;
             width: 560px;
             text-align: center;
-            top:118px;
+            top:49px;
         }
         p{
             position: absolute;
             margin-top: 40px;
             font-family: 'Roboto Slab', serif;
             font-size: 20px;
-            top: 270px;
+            top: 223px;
         }
         button{
             position: absolute;
