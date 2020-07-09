@@ -130,6 +130,7 @@ main #about {
   position: relative;
   top: 500px;
   text-align: center;
+  background-color: #ffffff;
 }
 
 main #about .about-cnt {
@@ -191,4 +192,49 @@ main #about .flex-about .graph {
 
 main #about .flex-about .graph h3 {
   margin-top: 36px;
+}
+
+main #blog {
+  position: relative;
+  top: 1100px;
+  height: 616px;
+  display: flex;
+}
+
+main #blog .gear {
+  background-color: #E9E9E9;
+  width: 468px;
+  height: 616px;
+}
+
+main #blog .gear img {
+  position: absolute;
+  top: 109px;
+  left: 233px;
+}
+
+main #blog .back-cnt {
+  z-index: 1;
+  width: 972px;
+  height: 616px;
+  background-image: url("./img/stone.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+main #blog .back-cnt .backGr {
+  position: absolute;
+  background-color: #000000;
+  opacity: .75;
+  z-index: 3;
+  width: 971px;
+  height: 616px;
+  top: 0px;
+}
+
+main #portfolio {
+  position: relative;
+  top: 2000px;
 }

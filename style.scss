@@ -40,7 +40,7 @@
             width: 373px;
     
         }
-        .menu-cnt{     
+        .menu-cnt{    
             width: 427px;
             display: flex;
             justify-content: space-between;
@@ -117,6 +117,7 @@ main{
     position: relative;
     top:500px;
     text-align: center;
+    background-color: #ffffff;
     .about-cnt{
         position: absolute;
         width: 100%;
@@ -172,6 +173,44 @@ main{
  }   
 }
 #blog{
-    
+    position: relative;
+    top:1100px;
+    height: 616px;
+    display: flex;
+    .gear{
+        background-color: #E9E9E9;
+        width: 468px;
+        height: 616px;
+        img{
+            position: absolute;
+            top: 109px;
+            left: 233px;
+        }
+    }
+    .back-cnt{
+        z-index: 1;
+        // position: relative;
+        width:972px;
+        height: 616px;
+        background-image: url("./img/stone.jpg");
+        background-attachment: fixed;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    .backGr{
+        position: absolute;
+        background-color: #000000;
+        opacity: .75;
+        z-index: 3;
+        width: 971px;
+        height: 616px;
+        top:0px;
+    }
 }
+}
+#portfolio{
+    position: relative;
+    top:2000px;
+}
+
 }
