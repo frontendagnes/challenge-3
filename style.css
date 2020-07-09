@@ -152,3 +152,43 @@ main #about .about-cnt p {
   font-size: 20px;
   margin-top: -28px;
 }
+
+main #about .flex-about {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  top: 329px;
+}
+
+main #about .flex-about h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #222222;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+main #about .flex-about p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  color: #777777;
+  width: 280px;
+  margin-top: -10px;
+}
+
+main #about .flex-about .heart {
+  margin-left: 228px;
+}
+
+main #about .flex-about .phone {
+  margin-left: 51px;
+}
+
+main #about .flex-about .graph {
+  margin-left: 51px;
+}
+
+main #about .flex-about .graph h3 {
+  margin-top: 36px;
+}
