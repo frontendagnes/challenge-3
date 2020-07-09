@@ -215,11 +215,11 @@ main #blog .gear img {
 
 main #blog .back-cnt {
   z-index: 1;
-  width: 972px;
-  height: 616px;
-  background-image: url("./img/stone.jpg");
+  width: 1049px;
+  height: 615px;
+  background-image: url("./img/Background-1.png");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -232,6 +232,55 @@ main #blog .back-cnt .backGr {
   width: 971px;
   height: 616px;
   top: 0px;
+  color: white;
+}
+
+main #blog .back-cnt .backGr h3 {
+  width: 640px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+main #blog .back-cnt .backGr h3 span {
+  color: #7CC576;
+}
+
+main #blog .back-cnt .backGr p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  margin-left: 100px;
+  width: 511px;
+  margin-top: -10px;
+  color: #CCCCCC;
+}
+
+main #blog .back-cnt .backGr .list-item {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+main #blog .back-cnt .backGr .list-item div {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  color: #CCCCCC;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+main #blog .back-cnt .backGr .list-item div span {
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+main #blog .back-cnt .backGr button {
+  opacity: 1;
+  margin-left: 100px;
+  margin-top: 30px;
+  width: 168px;
 }
 
 main #portfolio {
