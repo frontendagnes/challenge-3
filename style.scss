@@ -64,7 +64,7 @@
 main{
     position: relative;
     #home{
-        position: absolute;
+        position: relative;
         // border: 10px solid red;
         top:50px;
         overflow: hidden;
@@ -111,5 +111,31 @@ main{
             position: absolute;
             bottom: 119px;
         }
+}
+#about{
+    box-sizing: border-box;
+    position: relative;
+    top:500px;
+    text-align: center;
+    .about-cnt{
+        position: absolute;
+        width: 100%;
+        height: 358px;
+    h2{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 40px;
+      font-weight: 800;
+      color: #222222;
+      margin-top:162px;
+    }
+    p{
+        
+        font-family: 'Roboto Slab', serif;
+        color:#777777;
+        font-size: 20px;
+        margin-top: -28px;
+    }
+}
+    
 }
 }
