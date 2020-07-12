@@ -1,3 +1,8 @@
+:root {
+  --Montserrat: 'Montserrat', sans-serif;
+  --Roboto: 'Roboto Slab', serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,7 +14,7 @@ body {
 }
 
 button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--Montserrat);
   font-size: 15px;
   font-weight: bold;
   width: 200px;
@@ -28,7 +33,7 @@ button:hover {
 }
 
 .nav-head {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--Montserrat);
   width: 1168px;
   height: 72px;
   display: flex;
@@ -55,6 +60,11 @@ button:hover {
 .nav-head .menu-cnt span {
   display: inline-block;
   font-size: 14px;
+  transition: transform .75s;
+}
+
+.nav-head .menu-cnt span:hover {
+  transform: translateY(-5px);
 }
 
 .nav-head .menu-cnt span a {
@@ -76,7 +86,7 @@ main #home {
   position: relative;
   top: 50px;
   overflow: hidden;
-  width: 1430px;
+  width: 1400px;
   height: 530px;
   color: #ffffff;
   display: flex;
@@ -104,7 +114,7 @@ main #home .img-div {
 
 main #home h1 {
   position: absolute;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--Montserrat);
   font-size: 60px;
   font-weight: 900;
   width: 560px;
@@ -115,14 +125,14 @@ main #home h1 {
 main #home p {
   position: absolute;
   margin-top: 40px;
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--Roboto);
   font-size: 20px;
   top: 223px;
 }
 
 main #home button {
   position: absolute;
-  bottom: 119px;
+  bottom: 127px;
 }
 
 main #about {
@@ -140,7 +150,7 @@ main #about .about-cnt {
 }
 
 main #about .about-cnt h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--Montserrat);
   font-size: 40px;
   font-weight: 800;
   color: #222222;
@@ -148,7 +158,7 @@ main #about .about-cnt h2 {
 }
 
 main #about .about-cnt p {
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--Roboto);
   color: #777777;
   font-size: 20px;
   margin-top: -28px;
@@ -163,7 +173,7 @@ main #about .flex-about {
 }
 
 main #about .flex-about h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--Montserrat);
   font-size: 18px;
   color: #222222;
   font-weight: bold;
@@ -171,7 +181,7 @@ main #about .flex-about h3 {
 }
 
 main #about .flex-about p {
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--Roboto);
   font-size: 14px;
   color: #777777;
   width: 280px;
@@ -237,7 +247,7 @@ main #blog .back-cnt .backGr {
 
 main #blog .back-cnt .backGr h3 {
   width: 640px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--Montserrat);
   font-size: 40px;
   font-weight: 800;
   margin-left: 100px;
@@ -249,7 +259,7 @@ main #blog .back-cnt .backGr h3 span {
 }
 
 main #blog .back-cnt .backGr p {
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--Roboto);
   font-size: 16px;
   margin-left: 100px;
   width: 511px;
@@ -263,10 +273,10 @@ main #blog .back-cnt .backGr .list-item {
 }
 
 main #blog .back-cnt .backGr .list-item div {
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--Roboto);
   font-size: 16px;
   color: #CCCCCC;
-  line-height: 1.6;
+  line-height: 1.4;
   display: flex;
   align-items: center;
 }
@@ -278,12 +288,210 @@ main #blog .back-cnt .backGr .list-item div span {
 
 main #blog .back-cnt .backGr button {
   opacity: 1;
-  margin-left: 100px;
-  margin-top: 30px;
+  margin-left: 98px;
+  margin-top: 48px;
   width: 168px;
+}
+
+main h4, main .p-title {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: var(--Montserrat);
+}
+
+main .p-h4, main .p-cnt {
+  color: #777777;
+  font-family: var(--Roboto);
+  font-size: 16px;
 }
 
 main #portfolio {
   position: relative;
-  top: 2000px;
+  top: 1150px;
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+main #portfolio .developing {
+  margin-left: 228px;
+}
+
+main #portfolio .developing h4 {
+  margin-top: 83px;
+}
+
+main #portfolio .developing .p-h4 {
+  width: 417px;
+  margin-top: -7px;
+}
+
+main #portfolio h3 {
+  text-align: center;
+  font-family: var(--Montserrat);
+  font-size: 40px;
+  font-weight: 800;
+  color: #222222;
+  margin-top: 50px;
+}
+
+main #portfolio .p-h3 {
+  text-align: center;
+  color: #777777;
+  font-family: var(--Roboto);
+  font-size: 20px;
+  margin-top: -40px;
+}
+
+main #portfolio .cnt-project {
+  display: flex;
+  margin-top: 33px;
+  margin-left: 16px;
+}
+
+main #portfolio .cnt-project .cnt-dev {
+  width: 375px;
+  margin-left: 228px;
+}
+
+main #portfolio .cnt-project .cnt-dev .wap-icon {
+  display: flex;
+  width: 550px;
+  margin-bottom: 20px;
+}
+
+main #portfolio .cnt-project .cnt-dev .wap-icon .icon {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 70px !important;
+  height: 70px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: -15px;
+  margin-top: -6px;
+}
+
+main #portfolio .cnt-project .cnt-dev .wap-icon .icon-cnt .p-title {
+  margin-top: 10px;
+}
+
+main #portfolio .cnt-project .cnt-dev .wap-icon .icon-cnt .p-cnt {
+  width: 450px;
+  margin-top: -20px;
+}
+
+main #portfolio .cnt-project .treehouse-mobile {
+  position: absolute;
+  right: -400px;
+  top: 185px;
+}
+
+main #portfolio .cnt-project .foot-icon {
+  font-family: var(--Roboto);
+  font-size: 16px;
+  width: 450px;
+  margin-top: -8px;
+  margin-left: -15px;
+  color: #777777;
+}
+
+main #portfolio .cnt-project .link-icon {
+  color: #7CC576;
+  background-color: transparent;
+  border: none;
+  margin-left: -52px;
+  margin-top: 24px;
+  height: 19px;
+}
+
+main #portfolio .cnt-project .link-icon i {
+  transition: transform .75s ease-out;
+}
+
+main #portfolio .cnt-project .link-icon:hover {
+  color: #40f32f;
+}
+
+main #portfolio .cnt-project .link-icon:hover i {
+  transform: translateX(10px);
+}
+
+main #culture {
+  position: relative;
+  top: 1188px;
+  padding-top: 1px;
+  background-color: #F9F9F9;
+}
+
+main #culture .culture-head {
+  text-align: center;
+  padding-top: 1px;
+}
+
+main #culture .culture-head h3 {
+  font-size: 40px;
+  font-family: var(--Montserrat);
+  font-weight: 800;
+  color: #222222;
+  padding-top: 48px;
+}
+
+main #culture .culture-head p {
+  font-size: 20px;
+  font-family: var(--Roboto);
+  color: #777777;
+  margin-top: -36px;
+}
+
+main #culture .culture-flex-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #culture .culture-flex-cnt .culture-flex-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 313px;
+  margin-top: 67px;
+  padding-bottom: 85px;
+}
+
+main #culture .culture-flex-cnt .culture-flex-item hr {
+  background-color: #777777;
+  width: 170px;
+  position: absolute;
+  height: 2px;
+  top: 287px;
+  margin-left: 157px;
+}
+
+main #culture .culture-flex-cnt .culture-flex-item div {
+  border: 2px solid #707070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+main #culture .culture-flex-cnt .culture-flex-item .culture-flex-title {
+  font-weight: 800;
+  font-size: 18px;
+  font-family: var(--Montserrat);
+  color: #222222;
+  margin-top: 26px;
+}
+
+main #culture .culture-flex-cnt .culture-flex-item .culture-flex-descryption {
+  font-size: 14px;
+  font-family: var(--Roboto);
+  color: #777777;
+  margin-top: -9px;
+  width: 280px;
 }
