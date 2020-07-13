@@ -293,14 +293,16 @@ main #blog .back-cnt .backGr button {
   width: 168px;
 }
 
-main h4, main .p-title {
+main h4,
+main .p-title {
   color: #222222;
   font-size: 18px;
   font-weight: 800;
   font-family: var(--Montserrat);
 }
 
-main .p-h4, main .p-cnt {
+main .p-h4,
+main .p-cnt {
   color: #777777;
   font-family: var(--Roboto);
   font-size: 16px;
@@ -494,4 +496,241 @@ main #culture .culture-flex-cnt .culture-flex-item .culture-flex-descryption {
   color: #777777;
   margin-top: -9px;
   width: 280px;
+}
+
+main #clients {
+  position: relative;
+  top: 1225px;
+}
+
+main #clients .clients-head h3 {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: var(--Montserrat);
+  color: #222222;
+  text-align: center;
+}
+
+main #clients .clients-head p {
+  font-size: 20px;
+  font-family: var(--Roboto);
+  color: #777777;
+  text-align: center;
+  margin-top: -35px;
+}
+
+main #clients .clients-cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 117px;
+  margin-left: 232px;
+}
+
+main #clients .clients-cnt .clients-about {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+main #clients .clients-cnt .clients-about .tringle1 {
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-right: 30px solid #F9F9F9;
+  margin: 0 auto;
+  margin-top: 66px;
+  z-index: 1;
+}
+
+main #clients .clients-cnt .clients-about .tringle2 {
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 30px solid #F9F9F9;
+  margin: auto 0;
+  margin-top: 151px;
+}
+
+main #clients .clients-cnt .clients-about .clients-img {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+main #clients .clients-cnt .clients-about .clients-img img {
+  border-radius: 50%;
+}
+
+main #clients .clients-cnt .clients-about .img1 {
+  top: -26px;
+  left: -270px;
+}
+
+main #clients .clients-cnt .clients-about .img2 {
+  top: 76px;
+  right: -265px;
+}
+
+main #clients .clients-cnt .clients-descryption {
+  background-color: #F9F9F9;
+  width: 642px;
+  height: 172px;
+  font-size: 22px;
+  font-family: var(--Roboto);
+  color: #777777;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main #clients .clients-cnt .clients-descryption p {
+  color: #7CC576;
+  font-size: 18px;
+}
+
+main #clients .clients-cnt .dys1 {
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+main #clients .clients-cnt .dys2 {
+  margin-top: 82px;
+  margin-left: -461px;
+}
+
+main #contact {
+  position: relative;
+  background-color: #7CC576;
+  height: 250px;
+  top: 1325px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main #contact h3 {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: var(--Montserrat);
+  margin-top: 60px;
+}
+
+main #contact button {
+  background: transparent;
+  border: 3px solid #ffffff;
+  width: 173px;
+  height: 46px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--Montserrat);
+  color: #ffffff;
+  border-radius: 10px !important;
+  margin-top: -18px;
+}
+
+main #contact button:hover {
+  color: #000000;
+  border-color: #000000;
+}
+
+main #advertisement {
+  position: relative;
+  top: 1326px;
+  height: 165px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #advertisement .adv-cnt img {
+  margin-left: 50px;
+}
+
+main #advertisement .adv-cnt .frist-img {
+  margin-left: 0;
+}
+
+main #footer {
+  position: relative;
+  top: 1325px;
+  height: 365px;
+  background-color: #222222;
+}
+
+main #footer .nav-bottom {
+  display: flex;
+  color: #ECECEC;
+  padding-top: 40px;
+  margin-left: 188px;
+}
+
+main #footer .nav-bottom .frist-level {
+  width: 300px;
+  list-style-type: none;
+}
+
+main #footer .nav-bottom .frist-level li {
+  font-family: var(--Montserrat);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main #footer .nav-bottom .frist-level .second-level {
+  list-style-type: none;
+  margin-top: 22px;
+}
+
+main #footer .nav-bottom .frist-level .second-level li {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: var(--Roboto);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+main #footer .nav-bottom .frist-level .second-level li i {
+  font-size: 28px;
+  position: absolute;
+  left: 231px;
+}
+
+main #footer .nav-bottom .frist-level .second-level li .twit {
+  position: absolute;
+  left: 910px !important;
+}
+
+main #footer .nav-bottom .frist-level .second-level li .two-level {
+  position: absolute;
+  left: 563px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  top: 1324px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+footer p {
+  font-size: 14px;
+  font-family: var(--Montserrat);
+  margin-left: 230px;
+  margin-right: 97px;
+}
+
+footer i {
+  font-size: 40px;
+  margin-left: 15px;
+  color: #222222;
 }
