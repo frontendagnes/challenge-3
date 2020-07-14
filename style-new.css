@@ -1,14 +1,22 @@
 :root {
     --Montserrat: 'Montserrat', sans-serif;
     --Roboto: 'Roboto Slab', serif;
+    --color-light: #FFFFFF;
+    --color-dark: #222222;
+    --color-middle: #CCCCCC;
 }
-
+html{
+    scroll-behavior: smooth;
+}
+/* 
+wyłączone do momentu skończenia całego css
 .sticky{
     position: fixed;
     top: 0;
     width: 100% !important;
     display: flex;
-    align-items: center;
+     align-items: center; 
+    justify-content: center;
     height: 80px;
     background-color: #ffffff;
     z-index: 10;
@@ -16,4 +24,166 @@
 }
 .menu-sticky{
     margin-right: 50px;
+} */
+button {
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-weight: bold;
+    width: 200px;
+    height: 60px;
+    background-color: #7CC576;
+    color: white;
+    border-radius: 100px;
+    border: transparent;
+    cursor: pointer;
+    transition: all .75s;
+}
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+/* Menu */
+header{
+    height: 72px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.nav-head{
+    font-family: var(--Montserrat);
+    height: 72px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.wap-head-nav{
+    width: 375px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -10px;
+}
+.menu-cnt{
+    align-self: flex-end;
+    margin-right: 85px;
+}
+.menu-cnt-span{
+    margin-left: 30px;
+    transition: all .75s;
+}
+.menu-cnt-span:hover{
+    transform: translateY(-50px); /*sprawdzic dlaczego nie działa */
+}
+.menu-cnt span a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--Montserrat);
+    color: #777777;
+    transition: all .75s ease-in;
+}
+
+.menu-cnt span a:hover{
+    color: #000000;
+}
+h2, h3{
+    font-size: 40px;
+    font-family: var(--Montserrat);
+    color: var(--color-dark);
+    font-weight: bold;
+}
+p{
+    color: #777777;
+    font-size: 20px;
+    font-family: var(--Roboto);
+}
+/* Home */
+#home{
+    background-image: url("./img/notebok-1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 530px;
+    color: white;
+    margin-top: 20px;
+    position: relative;
+}
+.img-div{
+    background-color: #000000;
+    opacity: .75;
+    width: 100%;
+    height: 530px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1{
+   text-align: center;
+   font-family: var(--Montserrat);
+   font-size: 60px;
+   font-weight: bold;
+   color: var(--color-light);
+   width: 560px;
+   position: absolute;
+   top:68px;
+   left:406px;
+}
+#home p{
+    text-align: center;
+    font-weight: var(--Roboto);
+    font-size: 20px;
+    color: var(--color-middle);
+    position: absolute;
+    top:266px;
+    left: 535px;
+}
+#home button{
+    position: absolute;
+    top: 365px;
+    left: 593px;
+}
+/* About */
+#about{
+    
+}
+.about-cnt{
+    text-align: center;
+    position: relative;
+}
+.about-cnt > h2{
+    position: absolute;
+    top: 71px;
+    left: 426px;
+}
+.about-dys{
+    position: absolute;
+    top:137px;
+    left: 512px;
+}
+.flex-about{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:267px;
+    left: 213px;
+}
+
+.flex-about > div{
+    width: 300px;
+    
+}
+.flex-about > div > h3{
+    font-size: 18px;
+
+}
+.flex-about > div > p{
+    font-size: 14px;
+}
+.phone{
+    margin-left: 28px;
+}
+.graph{
+    margin-left: 32px;
 }

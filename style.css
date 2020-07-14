@@ -244,7 +244,7 @@ main #blog .back-cnt {
   background-attachment: fixed;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 300px;
 }
 
 main #blog .back-cnt .backGr {
