@@ -32,6 +32,26 @@ button:hover {
   color: #000000;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #ffffff;
+  z-index: 10;
+  transition: all .75s;
+}
+
+.menu-sticky {
+  margin-right: 50px;
+}
+
+header {
+  height: 72px !important;
+}
+
 .nav-head {
   font-family: var(--Montserrat);
   width: 1168px;
@@ -39,7 +59,7 @@ button:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: flex-end;
+  background-color: white;
 }
 
 .nav-head .wap-head-nav {
@@ -78,15 +98,9 @@ button:hover {
   color: #000000;
 }
 
-main {
-  position: relative;
-}
-
 main #home {
-  position: relative;
-  top: 50px;
   overflow: hidden;
-  width: 1400px;
+  width: 100%;
   height: 530px;
   color: #ffffff;
   display: flex;
@@ -95,17 +109,14 @@ main #home {
   align-items: center;
   position: absolute;
   color: white;
-}
-
-main #home img {
-  position: absolute;
-  width: 100%;
-  height: 530px;
+  background-image: url("./img/notebok-1.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 43px;
 }
 
 main #home .img-div {
-  position: absolute;
-  width: 1430px;
+  width: 100%;
   height: 530px;
   background-color: black;
   opacity: .75;
@@ -137,16 +148,16 @@ main #home button {
 
 main #about {
   box-sizing: border-box;
-  position: relative;
-  top: 500px;
   text-align: center;
   background-color: #ffffff;
+  position: absolute;
+  top: 740px;
 }
 
 main #about .about-cnt {
-  position: absolute;
   width: 100%;
-  height: 358px;
+  height: auto;
+  margin-left: 88px;
 }
 
 main #about .about-cnt h2 {
@@ -154,7 +165,7 @@ main #about .about-cnt h2 {
   font-size: 40px;
   font-weight: 800;
   color: #222222;
-  margin-top: 162px;
+  margin-top: -5px;
 }
 
 main #about .about-cnt p {
@@ -165,11 +176,9 @@ main #about .about-cnt p {
 }
 
 main #about .flex-about {
-  position: absolute;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  top: 329px;
 }
 
 main #about .flex-about h3 {
@@ -177,27 +186,31 @@ main #about .flex-about h3 {
   font-size: 18px;
   color: #222222;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 main #about .flex-about p {
   font-family: var(--Roboto);
   font-size: 14px;
   color: #777777;
-  width: 280px;
-  margin-top: -10px;
+  width: 300px;
+  margin-top: -7px;
+}
+
+main #about .flex-about div {
+  margin-top: 63px;
 }
 
 main #about .flex-about .heart {
-  margin-left: 228px;
+  margin-left: 133px;
 }
 
 main #about .flex-about .phone {
-  margin-left: 51px;
+  margin-left: 31px;
 }
 
 main #about .flex-about .graph {
-  margin-left: 51px;
+  margin-left: 31px;
 }
 
 main #about .flex-about .graph h3 {
@@ -495,7 +508,8 @@ main #culture .culture-flex-cnt .culture-flex-item .culture-flex-descryption {
   font-family: var(--Roboto);
   color: #777777;
   margin-top: -9px;
-  width: 280px;
+  width: 300px;
+  text-align: center;
 }
 
 main #clients {
@@ -509,6 +523,7 @@ main #clients .clients-head h3 {
   font-family: var(--Montserrat);
   color: #222222;
   text-align: center;
+  margin-top: 60px;
 }
 
 main #clients .clients-head p {
@@ -733,4 +748,29 @@ footer i {
   font-size: 40px;
   margin-left: 15px;
   color: #222222;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+  .nav-head {
+    width: 100%;
+  }
+  .nav-head .menu-cnt {
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-head .menu-cnt span {
+    margin-left: 20px;
+  }
+  main .flex-about div {
+    z-index: 10;
+  }
+  main #portfolio .treehouse-mobile {
+    display: none;
+  }
+  main #blog {
+    top: 1245px;
+  }
 }
