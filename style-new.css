@@ -148,26 +148,22 @@ p{
 }
 .about-cnt{
     text-align: center;
-    position: relative;
+    margin-top: 104px;
 }
 .about-cnt > h2{
-    position: absolute;
-    top: 71px;
-    left: 426px;
+
 }
 .about-dys{
-    position: absolute;
-    top:137px;
-    left: 512px;
+    margin-top: -28px;
 }
 .flex-about{
+    box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top:267px;
-    left: 213px;
+    margin-left: 140px;
+    margin-top:86px;
 }
 
 .flex-about > div{
