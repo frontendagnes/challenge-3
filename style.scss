@@ -8,7 +8,6 @@
    }
 
    body {
-       width: 1400px;
        margin: 0;
        padding: 0;
    }
@@ -31,20 +30,20 @@
        background-color: #ffffff;
        color: #000000;
    }
-   .sticky{
-       position: fixed;
-       top: 0;
-       width: 100% !important;
-       display: flex;
-       align-items: center;
-       height: 80px;
-       background-color: #ffffff;
-       z-index: 10;
-       transition: all .75s;
-   }
-   .menu-sticky{
-       margin-right: 50px;
-   }
+//    .sticky{
+//        position: fixed;
+//        top: 0;
+//        width: 100% !important;
+//        display: flex;
+//        align-items: center;
+//        height: 80px;
+//        background-color: #ffffff;
+//        z-index: 10;
+//        transition: all .75s;
+//    }
+//    .menu-sticky{
+//        margin-right: 50px;
+//    }
    header{
        height: 72px !important;
    }
@@ -237,11 +236,11 @@
 
            .back-cnt {
                z-index: 1;
-               width: 1049px;
+               width: 100%;
                height: 615px;
                background-image: url("./img/Background-1.png");
                background-attachment: fixed;
-               background-size: 90% 80%;
+               background-size: cover;
                background-repeat: no-repeat;
                background-position: 230px;
 
