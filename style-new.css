@@ -151,15 +151,9 @@ main{
     left: 593px;
 }
 /* About */
-#about{
-    
-}
 .about-cnt{
     text-align: center;
     margin-top: 104px;
-}
-.about-cnt > h2{
-
 }
 .about-dys{
     margin-top: -28px;
@@ -426,7 +420,6 @@ main{
 .clients-about{
     display: flex;
     flex-flow: row wrap;
-    /* margin-bottom: 20px; */
     justify-content: center;
     margin-top: 100px;
 }
@@ -434,7 +427,6 @@ main{
     background-color: #F9F9F9;
     width: 50%;
     padding: 30px;
-    /* padding-right: 40px; */
     font-size: 22px;
     font-family: var(--Roboto);
     color: #777777;
@@ -466,3 +458,35 @@ main{
     margin-top: 66px;
     margin-right: 20px;
    }
+   .about2{
+    margin-bottom: 72px;
+   }
+
+   /* Contact */
+#contact{
+    background-color: #7CC576;
+    color: white;
+    text-align: center;
+    margin-top: -34px;
+    padding-bottom: 55px;
+    padding-top: 20px;
+}
+#contact > h3{
+    color: var(--color-light);
+}
+#contact > button{
+    background: transparent;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    width: 173px;
+    height: 46px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--Montserrat);
+    margin-top: -20px;
+}
+#contact > button:hover{
+      color: #000000;
+      border-color: #000000;
+}
