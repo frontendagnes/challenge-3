@@ -8,38 +8,40 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-new.css">
     <link rel="shortcut icon" href="./img/favicon.png">
 </head>
 
 <body>
 
     <header>
+        <div class = "div-head">
+        <div class="wap-head-nav">
+            <img src="./img/logo.png" alt="">
+        </div>
         <nav class="nav-head">
-            <div class="wap-head-nav">
-                <img src="./img/logo.png" alt="">
-
-            </div>
             <div class="menu-cnt">
-                <span><a href="#home">HOME</a></span>
-                <span><a href="#about">ABOUT</a></span>
-                <span><a href="#blog">BLOG</a></span>
-                <span><a href="#portfolio">PORTFOLIO</a></span>
-                <span><a href="#contact">CONTACT</a></span>
+                <span class = "menu-cnt-span"><a href="#home">HOME</a></span>
+                <span class = "menu-cnt-span"><a href="#about">ABOUT</a></span>
+                <span class = "menu-cnt-span"><a href="#blog">BLOG</a></span>
+                <span class = "menu-cnt-span"><a href="#portfolio">PORTFOLIO</a></span>
+                <span class = "menu-cnt-span"><a href="#contact">CONTACT</a></span>
             </div>
         </nav>
+    </div>
     </header>
     <main>
-        <article id="home">
-            <div class="img-div"></div>
-            <h1>CREATIVE DIGITAL SOLUTION</h1>
-            <p>Proin iaculis purus cisequat sem cure</p>
-            <button type="button">VIEW PORTFOLIO</button>
-        </article>
-        <article id="about">
+        <section id="home">
+            <div class="img-div">
+                <h1>CREATIVE DIGITAL SOLUTIONS</h1>
+                <p>Proin iaculis purus cisequat sem cure</p>
+                <button type="button">VIEW PORTFOLIO</button>
+            </div>
+        </section>
+        <section id="about">
             <div class="about-cnt">
                 <h2>PROFESSIONAL SERVICES</h2>
-                <p>Proin iaculis purus cisequat sem cure</p>
+                <p class = "about-dys">Proin iaculis purus cisequat sem cure</p>
                 <div class="flex-about">
                     <div class="heart">
                         <img src="./img/heart.png " alt="">
@@ -64,13 +66,14 @@
                     </div>
                 </div>
             </div>
-        </article>
-        <article id="blog">
+        </section>
+        <section id="blog">
             <div class="gear">
                 <img src="/img/gear2.png" alt="">
             </div>
             <div class="back-cnt">
                 <div class="backGr">
+                <div class = "blog-dyscription">
                     <h3>JUST RELAX <span>&</span><br> LET US DO THE HEAVY LIFTING</h3>
                     <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
                         posuere odio in tincidunt.</p>
@@ -80,12 +83,13 @@
                         <div> <span><i class="far fa-check-circle"></i></span> Round The Clock Support</div>
                     </div>
                     <button type="button">LEARN MORE</button>
-                </div>
-            </div>
-        </article>
-        <article id="portfolio">
+                </div></div>
+            </div> 
+        </section>
+        <section id="portfolio">
             <h3>LATEST PROJECT</h3>
             <p class="p-h3">Proin iaculis purus consequat sem cure </p>
+            <!-- <div class = "portfolio-cnt"> -->
             <div class="developing">
                 <h4>DEVELOPING A FRAMEWORK</h4>
                 <p class="p-h4">Proin iaculis purus consequat sem cure digni ssim
@@ -130,17 +134,17 @@
                 <div class="treehouse-mobile">
                     <img src="/img/isometriciPadAir.png" alt="">
                 </div>
-            </div>
-        </article>
-        <article id="culture">
+            <!-- </div> -->
+        </div>
+        </section>
+        <section id="culture">
             <div class="culture-head">
                 <h3>CULTURE & VALUES</h3>
                 <p>Proin iaculis purus consequat cure. </p>
             </div>
             <div class="culture-flex-cnt">
                 <div class="culture-flex-item">
-                    <div><img src="./img/Icon-Music.png" alt=""></div>
-                    <hr class="hr1">
+                    <div class = "culture-div-frist"><img src="./img/Icon-Music.png" alt=""></div> 
                     <p class="culture-flex-title">WORK-LIFE BALANCE</p>
                     <p class="culture-flex-descryption">
                         Proin iaculis purus consequat sem cure
@@ -151,8 +155,7 @@
                 </div>
 
                 <div class="culture-flex-item">
-                    <div><img src="./img/Icon-Graph.png" alt=""></div>
-                    <hr class="hr2">
+                    <div class="culture-div-two"><img src="./img/Icon-Graph.png" alt=""></div>
                     <p class="culture-flex-title">QUALITY OVER QUANTITY</p>
                     <p class="culture-flex-descryption">
                         Proin iaculis purus consequat sem cure
@@ -161,10 +164,10 @@
                     </p>
                 </div>
 
-                <div class="culture-flex-item">
+                <div class="culture-flex-item dys-last">
                     <div><img src="./img/Icon-Star.png" alt=""> </div>
                     <p class="culture-flex-title">DELIVER EXCELLENCE</p>
-                    <p class="culture-flex-descryption">
+                    <p class="culture-flex-descryption ">
                         Proin iaculis purus consequat sem cure
                         digni ssim. Donec porttitora entum suscipit
                         aenean rhoncus posuere odio in tincidunt.
@@ -172,8 +175,8 @@
 
                 </div>
             </div>
-        </article>
-        <article id="clients">
+        </section>
+        <section id="clients">
             <div class="clients-head">
                 <h3>OUR AWESOME CLIENTS</h3>
                 <p>Proin iaculis purus consequat sem cure. </p>
@@ -182,14 +185,14 @@
                 <div class="clients-about">
                     <div class="clients-img img1"><img src="./img/Honeyview_jamie.webp" alt=""></div>
                     <div class="tringle1"></div>
-                    <div class="clients-descryption dys1">
+                    <div class="clients-descryption">
                         “ Proin iaculis purus consequat sem cure digni ssim
                         donec porttitora entum suscipit aenean rhoncus. ”
                         <p>- Jamie Richardson, Founder of Cocoa Media</p>
                     </div>
                 </div>
-                <div class="clients-about">
-                    <div class="clients-descryption dys2">
+                <div class="clients-about about2">
+                    <div class="clients-descryption">
                         “ Proin iaculis purus consequat sem cure digni ssim
                         donec porttitora entum suscipit aenean rhoncus. ”
                         <p>- Kim Thompson, Founder of Rainel</p>
@@ -198,29 +201,30 @@
                     <div class="clients-img img2"><img src="./img/Honeyview_kim.webp" alt=""></div>
                 </div>
             </div>
-        </article>
-        <article id="contact">
+        </section>
+        <section id="contact">
             <h3>READY TO TALK ABOUT YOUR NEXT PROJECT?</h3>
             <button type="button">CONTACT US</button>
-        </article>
-        <article id="advertisement">
+        </section>
+        <section id="advertisement">
             <div class="adv-cnt">
-                <img class="frist-img" src="./img/Envato.png" alt="">
+                <img src="./img/Envato.png" alt="">
                 <img src="./img/WordPress.png" alt="">
                 <img src="./img/Tuts+.png" alt="">
                 <img src="./img/Microlancer copy.png" alt="">
             </div>
-        </article>
-        <article id="footer">
+        </section>
+        <section id="footer">
             <nav class="nav-bottom">
                 <ul class="frist-level">
                     <li>CONTACT US</li>
                     <ul class="second-level">
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <address>5 Main St.<br>
-                            Toronto, ON<br>
-                            M1H 3A5</address></li>
+                            <span>5 Main St.<br>
+                                Toronto, ON<br>
+                                M1H 3A5</span>
+                        </li>
                         <li><i class="fas fa-mobile-alt"></i><span>(416) 555-5252</span></li>
                         <li><i class="fas fa-envelope"></i><span>hello@treehouse.com</span></li>
                     </ul>
@@ -231,28 +235,30 @@
                     <ul class="second-level">
                         <li><i class="far fa-newspaper two-level"></i><span>Made With Love In Toronto</span></li>
                         <li><i class="far fa-image two-level"></i><span>Startup News & Emerging Tech</span></li>
-                        <li><i class="far fa-newspaper two-level"></i></i><span>Bitcoin Will Soon Rule The World</span></li>
-                        <li><i class="far fa-newspaper two-level"></i></i><span>Wearable Technology On The Rise</span></li>
+                        <li><i class="far fa-newspaper two-level"></i></i><span>Bitcoin Will Soon Rule The World</span>
+                        </li>
+                        <li><i class="far fa-newspaper two-level"></i></i><span>Wearable Technology On The Rise</span>
+                        </li>
                         <li><i class="fas fa-play two-level"></i><span>Learn Web Design In 30 Days!</span></li>
                     </ul>
                 </ul>
                 <ul class="frist-level">
-                    <li>LATEST POSTS</li>
+                    <li>LATEST Tweets</li>
                     <ul class="second-level">
                         <li>
                             <i class="fab fa-twitter twit"></i>
-                            <span>Confucius: Life is really simple, 
-                            but we insist on making it 
-                            complicated. 
-                            #famousquotes
-                            8 mins ago</span>                     
-                            </li>
+                            <span>Confucius: Life is really simple,
+                                but we insist on making it
+                                complicated.
+                                #famousquotes
+                                8 mins ago</span>
+                        </li>
                         <li>
                             <i class="fab fa-twitter twit"></i>
-                            <span>Grab the Free Treehouse web template at FreebiesXpress! 
-                            #freebies #templates
-                            2 days ago</span>
-                            </li>
+                            <span>Grab the Free Treehouse web template at FreebiesXpress!
+                                #freebies #templates
+                                2 days ago</span>
+                        </li>
                     </ul>
                 </ul>
             </nav>
@@ -260,7 +266,6 @@
     </main>
     <footer>
         <p> &copy; Copyright 2020 FreebiesXpress.com</p>
-        
         <i class="fab fa-twitter-square"></i>
         <i class="fab fa-facebook"></i>
         <i class="fab fa-pinterest-square"></i>

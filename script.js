@@ -1,5 +1,6 @@
-const navHead = document.querySelector(".nav-head");
+const navHead = document.querySelector(".div-head")
 const menuCnt = document.querySelector(".menu-cnt")
+
 
 function sticky(){
     if (window.scrollY > 72){
@@ -12,3 +13,4 @@ function sticky(){
 }
 
 window.addEventListener('scroll', sticky)
+

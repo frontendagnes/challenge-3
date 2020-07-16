@@ -227,7 +227,11 @@ main #blog .back-cnt {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   background-position: 230px;
+=======
+  background-position: 300px;
+>>>>>>> css2
 }
 
 main #blog .back-cnt .backGr {
