@@ -490,3 +490,18 @@ main{
       color: #000000;
       border-color: #000000;
 }
+
+/* Advertisement */
+#advertisement{
+    display: flex;
+    justify-content: center;
+}
+.adv-cnt{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 60%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
