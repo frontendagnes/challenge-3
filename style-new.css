@@ -53,6 +53,7 @@ header{
     flex-flow: row wrap;
     justify-content: space-between;
     position: relative;
+    padding-bottom: 23px;
 }
 .nav-head{
     font-family: var(--Montserrat);
@@ -72,11 +73,12 @@ header{
     margin-right: 85px;
 }
 .menu-cnt-span{
+    display: inline-block;
     margin-left: 30px;
     transition: transform .75s;
 }
 .menu-cnt-span:hover{
-    transform: translateY(-5px); /*sprawdzic dlaczego nie działa */
+    transform: translateY(-5px);
     -moz-transform: translateY(-5px);
 }
 .menu-cnt span a{
@@ -103,6 +105,7 @@ p{
 }
 main{
     overflow: hidden;
+    box-sizing: border-box;
 }
 /* Home */
 #home{
@@ -132,28 +135,22 @@ main{
    font-weight: bold;
    color: var(--color-light);
    width: 560px;
-   position: absolute;
-   top:68px;
-   left:406px;
+   margin-top: -13px;
 }
 #home p{
     text-align: center;
     font-weight: var(--Roboto);
     font-size: 20px;
     color: var(--color-middle);
-    position: absolute;
-    top:266px;
-    left: 535px;
+    margin-top: -34px;
 }
 #home button{
-    position: absolute;
-    top: 365px;
-    left: 593px;
+    margin-top: 35px;
 }
 /* About */
 .about-cnt{
     text-align: center;
-    margin-top: 104px;
+    margin-top: 90px;
 }
 .about-dys{
     margin-top: -28px;
@@ -165,7 +162,7 @@ main{
     align-items: center;
     justify-content: center;
     margin-left: 140px;
-    margin-top:86px;
+    margin-top:83px;
 }
 
 .flex-about > div{
@@ -174,6 +171,7 @@ main{
 }
 .flex-about > div > h3{
     font-size: 18px;
+    margin-top: 30px;
 
 }
 .flex-about > div > p{
@@ -547,13 +545,15 @@ main{
 .second-level > li > span{
     align-self: flex-end;
     margin-left: 25px;  
-    font-size: 16px;  
+    font-size: 16px;
+    margin-right: 15px;   
 }
 
 /* footer */
 footer{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width:70%;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -570,4 +570,94 @@ footer > i{
     font-size: 40px;
     margin-left: 15px;
     color: #222222;
+}
+@media only screen  and (max-width:500px){
+    #home h1{
+        font-size: 20px;
+    }
+    #home p{
+        font-size: 10px;
+        margin-top: -5px;
+    }
+    .blog-dyscription{
+        margin-left: 30px;
+    }
+}
+@media only screen  and (max-width: 610px){
+    #home h1{
+        font-size: 40px;
+    }
+    #home p{
+        font-size: 15px;
+        margin-top: -5px;
+    }
+    .culture-flex-item{
+        width: 100% !important;
+        margin-bottom: -110px;
+    }
+    .dys-last{
+        margin-bottom: -50px;
+    }
+    .culture-flex-descryption{
+        width: 70% !important;
+    }
+
+}
+/* @media only screen  and (max-width: 661px){
+    .tringle1{
+        display: none;
+    }
+} */
+@media only screen  and (max-width: 769px){
+    .flex-about{
+        margin-left: 0;
+    }
+    #portfolio{
+        margin-left: 10px;
+        text-align: center;
+    }
+    .developing,
+    .foot-icon{
+        width: 100%;
+    }
+    .cnt-dev{
+        text-align: left;
+    }
+
+}
+@media only screen  and (max-width: 900px){
+
+    .gear{
+        display: none;
+    }
+    .back-cnt{
+        width: 100%;
+        background-position: 0;
+    }
+    .culture-div-frist::after,
+    .culture-div-two::after{
+        content: "";
+        height: 0;
+    }
+    .culture-flex-cnt{
+        text-align: center;
+    }
+    .culture-flex-item{
+        width: 50%;
+    }
+
+    .adv-cnt > img {
+        margin-top: 10px;
+    }
+}
+@media only screen  and (max-width: 955px){
+    footer > p{
+        width: 100%;
+    }
+
+}
+@media only screen  and (max-width: 1020px){
+    .nav-bottom{
+        justify-content: center;
+    }
 }
