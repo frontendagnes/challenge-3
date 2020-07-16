@@ -355,14 +355,6 @@ main{
 .culture-head p{
     margin-top: -37px;
 }
-hr {
-    background-color: #777777;
-    width: 13%;
-    height: 2px;
-    margin-left: 151px;
-    margin-top: -113px;
-    position: absolute;
-}
 .culture-flex-cnt{
     display: flex;
     flex-flow: row wrap;
@@ -400,4 +392,20 @@ hr {
 }
 .culture-flex-descryption{
     padding-bottom: 100px;
+}
+.culture-div-frist::after{
+    content: "";
+    height: 2px;
+    background-color: #777777;
+    width: 13%;
+    position: absolute;
+    left:31%;
+}
+.culture-div-two::after{
+    content: "";
+    height: 2px;
+    background-color: #777777;
+    width: 13%;
+    position: absolute;
+    left:56%;
 }
