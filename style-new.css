@@ -334,6 +334,7 @@ main{
 /* Culture */
 #culture{
     background-color: #F9F9F9;
+    margin-top: 500px; /*na loclalhost wartość = 0 */
 }
 .culture-head{
     text-align: center;
