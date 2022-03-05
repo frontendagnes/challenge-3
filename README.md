@@ -9,5 +9,5 @@ Część ikon pobrana z <i>https://fontawesome.com/</i>
 Strona responsywna.
 
 ## live
- https://zabula81.github.io/challenge-3/
+ https://frontendagnes.github.io/challenge-3/
 
